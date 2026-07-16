@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'apps.events',
     'apps.media',
     'apps.locations',
-    'apps.ai_reports',
+    'apps.ai',
     'apps.administration',
     'apps.categories',
     'apps.concerns',
