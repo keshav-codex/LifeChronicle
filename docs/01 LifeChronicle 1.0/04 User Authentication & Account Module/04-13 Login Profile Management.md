@@ -1,32 +1,63 @@
-04-13 Login Profile Management
+04-13 Login Profile View & Management
 1. Introduction
 
-The Login Profile Management module enables authenticated users to manage the authentication methods and account settings associated with their LifeChronicle account.
+The Login Profile View & Management module enables authenticated users to view and manage the authentication methods and account-related settings associated with their LifeChronicle account.
 
-It focuses exclusively on login credentials and authentication-related information rather than personal profile data.
+This module focuses exclusively on authentication credentials, login methods, account security, and authentication preferences. Personal information such as the user's name, birth details, and profile media is managed separately within the Birth Profile Module.
 
 2. Purpose
 
-The module shall:
+The Login Profile View & Management module shall:
 
-Manage login methods.
+View login profile information.
+Manage authentication methods.
 Link external identity providers.
 Unlink authentication providers.
-Manage email authentication.
+Manage Email & Password authentication.
 Control authentication preferences.
-3. Features
+Maintain account security.
+3. Login Profile Information
+
+The Login Profile may contain the following information.
+
+Account Information
+Registered Email Address
+Mobile Number (with Country Code)
+Preferred Language
+Email Verification Status
+Account Status
+Account Creation Date
+Last Login Date and Time
+Authentication Methods
+Email & Password
+Google
+Microsoft
+Apple
+Facebook
+GitHub
+Security Information
+Linked Authentication Providers
+Password Status
+Authentication History
+Recent Login Activity
+4. Features
 
 Authenticated users may:
 
-View linked login methods.
-Add a new authentication provider.
-Remove an existing authentication provider.
-Create a password for an externally authenticated account.
-Change an existing password.
+View Login Profile.
+Update Login Profile.
+View linked authentication methods.
+Link new authentication providers.
+Remove linked authentication providers.
+Add Email & Password authentication to an externally authenticated account.
+Change Password.
 View authentication history.
-4. Linked Authentication Providers
+View recent login activity.
+5. Linked Authentication Providers
 
-A LifeChronicle account may simultaneously support:
+A single LifeChronicle account may support multiple authentication methods simultaneously.
+
+Supported providers include:
 
 Email & Password
 Google
@@ -35,9 +66,28 @@ Apple
 Facebook
 GitHub
 
-Additional providers may be added in future versions.
+Additional authentication providers may be supported through system configuration.
 
-5. Business Rules
+6. Login Profile Update
+
+Authenticated users may update:
+
+Registered Mobile Number.
+Preferred Language.
+Linked Authentication Providers.
+Email & Password authentication.
+Password.
+
+The following information shall not be directly editable:
+
+Account Creation Date.
+Authentication Audit History.
+Internal User Identifier.
+Email Verification History.
+
+Changes to the registered email address, if permitted by system configuration, shall require identity verification.
+
+7. Business Rules
 
 The system shall ensure:
 
@@ -45,33 +95,42 @@ One external identity provider account is linked to only one LifeChronicle accou
 One LifeChronicle account may contain multiple linked authentication methods.
 At least one authentication method shall always remain active.
 Removing the final authentication method shall not be permitted.
-6. Security
+Existing accounts shall be linked rather than duplicated whenever applicable.
+Sensitive authentication changes shall require user re-authentication before completion.
+8. Security
 
 Sensitive operations shall require re-authentication, including:
 
 Password changes.
-Linking providers.
-Unlinking providers.
-Primary email changes.
-7. Administrative Access
+Linking authentication providers.
+Unlinking authentication providers.
+Registered email changes.
+Removal of Email & Password authentication.
 
-Administrators may view authentication information for investigation purposes but shall not view passwords or provider credentials.
+Authentication credentials, passwords, tokens, and provider secrets shall never be displayed to users or administrators.
 
-Administrative actions shall be fully audited.
+9. Administrative Access
 
-8. Future Enhancements
+Authorized administrators may:
 
-Future versions may support:
+View login profile information for administrative, security, or investigation purposes.
+View linked authentication providers.
+View authentication history.
+View login activity.
 
-Preferred Login Method.
-Passkeys.
-Hardware Security Keys.
-Enterprise Identity Providers.
-Authentication Risk Scoring.
-9. Summary
+Administrators shall not be able to:
 
-The Login Profile Management module provides users with centralized control over their authentication methods while maintaining security, flexibility, and provider independence.
+View passwords.
+View password hashes.
+View authentication tokens.
+View provider credentials.
 
-10. Next Document
+All administrative access shall be recorded in the audit log.
+
+10. Summary
+
+The Login Profile View & Management module provides authenticated users with centralized control over their authentication methods, account security, and login preferences while ensuring provider independence, strong security, configurable business rules, and complete auditability.
+
+11. Next Document
 
 04-14 Authentication Security
