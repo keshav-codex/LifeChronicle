@@ -37,6 +37,10 @@ Each module owns its own business logic while collaborating with other modules t
 | Concerns       | Help desk and support                 |
 | AI             | Intelligence, governance, and reports |
 
+-> System Configuration is a centralized configuration 
+   module used to control application branding, feature 
+   flags, limits, and media settings
+
 ---
 
 # 4. Module Communication

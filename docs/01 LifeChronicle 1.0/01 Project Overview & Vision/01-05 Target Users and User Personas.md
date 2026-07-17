@@ -1,28 +1,62 @@
-# 01-05 Target Users and User Personas
+# 01-05 Problem Statement
 
-## Overview
+## 1. Introduction
 
-<!-- Add document overview here -->
+This document defines the real-world problems that motivated the development of LifeChronicle. Understanding these challenges provides the foundation for the project's vision, objectives, and proposed solution.
 
+---
 
-## Purpose
+# 2. Existing Problems
 
-<!-- Explain why this document exists -->
+People create thousands of memories throughout their lives, but these memories are often scattered across different platforms and devices.
 
+Common problems include:
 
-## Details
+* Photos stored in multiple locations.
+* Events remembered but never documented.
+* Important life milestones becoming difficult to recall.
+* Information spread across social media, cloud storage, messaging applications, and personal devices.
+* Lack of chronological organization.
+* Difficulty preserving family history.
 
-<!-- Add detailed information here -->
+---
 
+# 3. Limitations of Existing Solutions
 
-## Related Documents
+Current applications typically focus on only one aspect of personal information.
 
-<!-- Add links to related documentation -->
+Examples:
 
+* Photo galleries manage images.
+* Notes applications store text.
+* Calendars manage schedules.
+* Social media emphasizes public sharing.
+* Cloud storage focuses on file storage.
 
-## Revision History
+None of these provide a unified personal life timeline.
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | YYYY-MM-DD | Initial document creation |
+---
 
+# 4. Need for LifeChronicle
+
+There is a need for a platform that enables users to:
+
+* Preserve memories.
+* Organize events chronologically.
+* Connect related experiences.
+* Maintain privacy.
+* Record meaningful life stories.
+* Collaborate with family and trusted individuals.
+* Receive intelligent assistance without losing control over personal information.
+
+---
+
+# 5. Summary
+
+LifeChronicle addresses the challenge of fragmented personal memories by providing a secure, structured, and intelligent platform for lifelong digital memory management.
+
+---
+
+# 6. Next Document
+
+**01-06 Proposed Solution**

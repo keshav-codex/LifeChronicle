@@ -1,28 +1,69 @@
-# 01-07 Business Goals and Benefits
+# 01-07 Target Audience
 
-## Overview
+## 1. Introduction
 
-<!-- Add document overview here -->
+This document identifies the primary users of LifeChronicle and explains who will benefit from the platform.
 
+---
 
-## Purpose
+# 2. Primary Users
 
-<!-- Explain why this document exists -->
+LifeChronicle is intended for individuals who wish to preserve, organize, and revisit important moments from their lives.
 
+Typical users include:
 
-## Details
+* Students
+* Working Professionals
+* Families
+* Travellers
+* Researchers documenting personal journeys
+* Memory enthusiasts
+* Individuals preserving family history
 
-<!-- Add detailed information here -->
+---
 
+# 3. Secondary Users
 
-## Related Documents
+The platform also supports:
 
-<!-- Add links to related documentation -->
+* Family members invited to collaborative events.
+* Friends and relatives contributing shared memories.
+* Administrative staff managing the platform.
+* Support executives handling user concerns.
 
+---
 
-## Revision History
+# 4. Administrative Users
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | YYYY-MM-DD | Initial document creation |
+Administrative roles include:
 
+* Super Admin
+* Admin
+* Department Admin
+* Executive
+
+Each role has clearly defined responsibilities and permissions.
+
+---
+
+# 5. Technical Audience
+
+The documentation and architecture are also intended for:
+
+* Software Developers
+* Database Designers
+* AI Engineers
+* Quality Assurance Engineers
+* Future Project Contributors
+
+---
+
+# 6. Summary
+
+LifeChronicle is designed for anyone who wishes to build and preserve a structured digital history of their life while benefiting from intelligent assistance, collaboration, and strong privacy controls.
+
+---
+
+# 7. Next Document
+
+**01-08 Core Features Overview**

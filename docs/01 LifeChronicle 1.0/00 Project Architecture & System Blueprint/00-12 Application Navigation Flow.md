@@ -57,8 +57,8 @@ The timeline serves as the central navigation hub of the application.
 Users can:
 
 * View Relationships
-* Send Invitations
-* Accept Invitations
+* Send and manage Invitations
+* Receive and manage Invitations
 * Manage Existing Relationships
 * Configure Privacy
 
