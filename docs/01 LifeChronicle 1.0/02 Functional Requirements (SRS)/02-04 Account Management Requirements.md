@@ -1,28 +1,102 @@
-# 02-04 Account Management Requirements
+# 02-04 User Registration
 
-## Overview
+## 1. Introduction
 
-<!-- Add document overview here -->
+This document defines the functional requirements for user registration in LifeChronicle Version 1.0.
 
+The registration process creates a new user account and initiates email verification before granting access to the application.
 
-## Purpose
+---
 
-<!-- Explain why this document exists -->
+# 2. Purpose
 
+The registration process shall:
 
-## Details
+* Create a new user account.
+* Validate user information.
+* Prevent duplicate registrations.
+* Initiate email verification.
+* Maintain secure account creation.
 
-<!-- Add detailed information here -->
+---
 
+# 3. Actors
 
-## Related Documents
+* Public Visitor
+* System
 
-<!-- Add links to related documentation -->
+---
 
+# 4. Preconditions
 
-## Revision History
+* User is not logged in.
+* User accesses the Registration page.
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | YYYY-MM-DD | Initial document creation |
+---
 
+# 5. Registration Fields
+
+### Mandatory
+
+* Email Address
+* Password
+* Confirm Password
+
+### Optional
+
+* Mobile Number (with Country Code)
+
+---
+
+# 6. Functional Requirements
+
+The system shall:
+
+* Validate all mandatory fields.
+* Verify email uniqueness.
+* Encrypt passwords before storage.
+* Send an email verification link.
+* Create an inactive account until verification.
+
+---
+
+# 7. Validation Rules
+
+* Name cannot be empty.
+* Email must be valid.
+* Email must be unique.
+* Password must satisfy security policy.
+* Confirm Password must match.
+* Mobile number is optional.
+
+---
+
+# 8. Business Rules
+
+* One account per email.
+* Email verification is mandatory.
+* Login is not permitted before email verification.
+* Registration activity shall be logged.
+
+---
+
+# 9. Error Handling
+
+Examples:
+
+* Email already registered.
+* Invalid email.
+* Weak password.
+* Registration failed.
+
+---
+
+# 10. Summary
+
+Registration creates a secure user account awaiting email verification.
+
+---
+
+# 11. Next Document
+
+**02-05 Email Verification**
