@@ -8,39 +8,45 @@ The design follows a modular, normalized, configuration-driven architecture wher
 
 2. System Architecture
 
-                            LoginProfile
 
-                                │
+LoginProfile
 
-               ┌────────────────┴───────────────┐
+│
 
-               ▼                                ▼
+├── BirthProfile
 
-        BirthProfile                        Staff
+│   │
 
-               │                                │
+│   ├── Timeline
 
-      ┌────────┴─────────┐              Administrative
+│   │   │
 
-      ▼                  ▼               Management
+│   │   └── Event
 
- Timeline          Relationship
+│   │       ├── Activity
 
-      │                  │
+│   │       ├── Collaboration
 
-      ▼                  ▼
+│   │       ├── Media
 
-    Event        RelationshipInvitation
+│   │       └── Location
 
-      │
+│   │
 
-      ├── Activity
+│   └── Relationship
 
-      ├── Collaboration
+│       │
 
-      ├── Media
+│       └── RelationshipInvitation
 
-      └── Location
+│
+
+└── Staff
+
+    │
+
+    └── Administrative Management
+
 
 ──────────────────────────────────────────────
 
