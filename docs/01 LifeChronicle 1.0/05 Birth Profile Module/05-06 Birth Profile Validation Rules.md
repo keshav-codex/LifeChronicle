@@ -1,86 +1,199 @@
-05-06 Birth Information Management
+05-06 Birth Profile Validation Rules
 1. Introduction
 
-The Birth Information Management module defines how birth-related information is captured, managed, validated, and maintained throughout the user's lifecycle within LifeChronicle.
+The Birth Profile Validation Rules define the validation requirements for all information collected during the creation and update of a Birth Profile.
 
-Birth Information represents the foundation of the user's digital identity and serves as the starting point of the Life Timeline. The module ensures that birth-related information remains accurate, consistent, and reusable across the application.
+The objective of these rules is to ensure data accuracy, consistency, and integrity while providing a user-friendly experience. All validations shall be configurable where applicable and shall be applied consistently throughout the application.
 
 2. Purpose
 
-The Birth Information Management module shall:
+The Birth Profile Validation Rules shall:
 
-Manage birth-related information.
-Maintain accurate birth records.
-Support configurable validation.
-Provide standardized birth information.
-Supply birth information to dependent modules.
-Preserve data consistency.
-3. Birth Information Components
+Ensure accurate profile information.
 
-The Birth Information consists of the following sections.
+Maintain data consistency.
 
-Personal Identity
+Prevent invalid or incomplete information.
+
+Support configurable validation policies.
+
+Improve overall data quality.
+
+3. General Validation Rules
+
+The system shall:
+
+Validate all mandatory fields before saving.
+
+Display meaningful validation messages.
+
+Highlight invalid fields.
+
+Prevent duplicate Birth Profiles for the same account.
+
+Save the Birth Profile only after successful validation.
+
+4. Section A – Primary Information Validation
+
+Profile Photo
+
+The Profile Photo is mandatory.
+
+The application shall encourage users to upload:
+
+Birth Photo (Preferred)
+
+or
+
+Best Early Childhood Photo
+
+The application shall display an appropriate message encouraging users to upload the preferred image.
+
+Validation
+
+Exactly one image shall be uploaded.
+
+Maximum file size: 2 MB
+
+Supported formats:
+
+JPG
+
+JPEG
+
+PNG
+
+Corrupted or unsupported files shall be rejected.
+
 Full Name
-Childhood Nickname (Optional)
-Birth Details
-Birth Date
-Birth Time (Optional, if unknown)
-Birth Day (Automatically Calculated)
-Birth Type
-Normal Delivery
-Caesarean (Surgery)
-Other
-Birth Location
 
-The user may specify:
+Validation Rules:
+
+Mandatory.
+
+Cannot be empty.
+
+Leading and trailing spaces shall be removed automatically.
+
+Shall follow the application's global text validation rules.
+
+Childhood Nickname
+
+Validation Rules:
+
+Optional.
+
+Shall follow the application's global text validation rules.
+
+5. Section B – Birth Information Validation
+
+Birth Date
+
+Validation Rules:
+
+Mandatory.
+
+Shall be a valid calendar date.
+
+Future dates shall not be permitted.
+
+Birth Time
+
+Validation Rules:
+
+Optional.
+
+If provided, shall be a valid time.
+
+Birth Day
+
+The Birth Day:
+
+Shall be calculated automatically.
+
+Shall not be editable by the user.
+
+6. Section C – Delivery Information Validation
+
+Delivery Type
+
+Accepted values:
+
+Normal
+
+Surgery
+
+Only configured values shall be accepted.
+
+Delivery Place
+
+Accepted values:
 
 Maternal Home
+
 Paternal Home
+
 Hospital
+
 Birth Center
+
 Other
 
-When applicable, the user may also provide:
+Delivery Place Name
 
-Place Name
+Validation Rules:
 
-Examples include:
+Mandatory only when:
 
-Hospital Name
-Birth Center Name
-Residence Name
-Other Place Name
-Birth Address
+Hospital
 
-The Birth Information module uses the application's Global Address Component.
+Birth Center
 
-The user may choose whether to add a birth location.
+Other
 
-Add Location?
+is selected.
 
-○ Yes
-○ No
+7. Section D – Birth Location Validation
 
-If Yes, the following information may be provided:
+The Birth Location follows the application's Global Address Validation Rules.
+
+Add Location = No
+
+No location validation shall be performed.
+
+Add Location = Yes
+
+The user shall provide at least one location source.
+
+Supported location sources:
+
+Address
+
+Google Map
+
+Address Validation
+
+The Address shall consist of:
 
 Address Line 1
-Address Line 2 (Optional)
-State / Province
-Country
-Google Map Location
-4. Address Validation
 
-The Birth Information module follows the Global Address Validation Standard.
+Address Line 2 (Optional)
+
+State
+
+Country
+
+Google Map Validation
 
 Case 1
 
-Address not entered.
+Address empty.
 
 Google Map selected.
 
 Result
 
-The system shall automatically populate the available address fields from the selected map location.
+The application shall automatically populate the available address fields.
 
 Case 2
 
@@ -102,7 +215,7 @@ Result
 
 The application shall compare both sources.
 
-If differences are detected, the system shall display a warning requesting the user to verify the information.
+If inconsistencies are detected, a warning shall be displayed requesting the user to verify the information.
 
 The application shall not automatically determine which information is correct.
 
@@ -114,67 +227,47 @@ No Google Map.
 
 Result
 
-If Add Location = Yes, the user shall provide at least one location source before saving the Birth Information.
+Validation shall fail.
 
-5. Birth Day Calculation
+8. Privacy Validation
 
-The Birth Day shall be automatically calculated from the Birth Date.
+The system shall:
 
-The calculated value shall update automatically whenever the Birth Date is modified.
+Apply the default privacy configuration during Birth Profile creation.
+Validate any user-selected privacy configuration according to the application's business rules.
 
-Manual modification of the Birth Day shall not be permitted.
+9. Validation Messages
 
-6. Information Validation
+Validation messages shall:
 
-The system shall validate:
+Be clear and user-friendly.
 
-Full Name.
-Birth Date.
-Birth Time format (if provided).
-Birth Type.
-Birth Location.
-Place Name (when applicable).
-Address information.
-Google Map information.
+Support multilingual presentation.
 
-Validation rules shall be configuration-driven.
+Identify the affected field.
 
-7. Module Integration
+Explain the required corrective action.
 
-Birth Information is used by:
+10. Business Rules
 
-Timeline Module
-Event Management Module
-Relationship Module
-Media Module
-AI Intelligence Module
-Personal Reports Module
-Administration Module
+The Birth Profile Validation module follows these principles:
 
-The Birth Information module serves as the authoritative source for birth-related information throughout the application.
+Validation shall occur before saving.
 
-8. Security
+Mandatory fields shall always be validated.
 
-Birth Information shall:
+Birth Day shall always be system-generated.
 
-Be editable only by authorized users.
-Be protected by privacy settings.
-Be recorded in audit logs when modified.
-Follow application security policies.
-9. Business Rules
+Profile Photo validation shall follow configured media rules.
 
-The Birth Information module follows these principles:
+Birth Location shall follow the Global Address Validation Rules.
 
-Birth Information belongs to one registered user.
-Birth Day is always calculated automatically.
-Birth Time is optional when unknown.
-Birth Address follows the Global Address Component.
-Validation is configuration-driven.
-Information changes shall maintain data integrity.
-10. Summary
+Validation policies shall be configuration-driven.
 
-The Birth Information Management module provides a centralized, validated, and reusable framework for managing birth-related information within LifeChronicle. It ensures consistency, supports configurable validation, integrates with multiple application modules, and forms the foundation of the user's digital identity and life timeline.
+11. Summary
 
-11. Next Document
+The Birth Profile Validation Rules ensure that all Birth Profile information is complete, accurate, and consistent before it becomes part of the user's permanent digital identity. By combining configurable validation, clear user feedback, and standardized business rules, the module maintains the integrity and reliability of LifeChronicle's foundational user data.
 
-05-07 Birth Media Management
+12. Next Document
+
+05-07 Birth Profile Business Rules

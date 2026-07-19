@@ -53,13 +53,21 @@ Deployment
 Every major feature follows the same lifecycle.
 
 1. Requirement Analysis
+
 2. Discussion
+
 3. Design Freeze
+
 4. Documentation
+
 5. Database Design
+
 6. Coding
+
 7. Testing
+
 8. Review
+
 9. Deployment
 
 ---
@@ -69,12 +77,19 @@ Every major feature follows the same lifecycle.
 Implementation order:
 
 * Models
+
 * Admin
+
 * Services
+
 * Validators
+
 * Business Rules
+
 * Views
+
 * Templates
+
 * Testing
 
 ---
@@ -118,9 +133,13 @@ AI never replaces mandatory business rules.
 Code should be:
 
 * Readable
+
 * Modular
+
 * Maintainable
+
 * Well documented
+
 * Consistent
 
 ---
@@ -130,8 +149,11 @@ Code should be:
 Testing includes:
 
 * Unit Testing
+
 * Integration Testing
+
 * Functional Testing
+
 * Regression Testing
 
 ---

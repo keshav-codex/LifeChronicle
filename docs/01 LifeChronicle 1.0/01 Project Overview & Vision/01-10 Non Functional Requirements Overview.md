@@ -13,12 +13,19 @@ The platform is designed not only as a software application but as a long-term d
 LifeChronicle enables users to:
 
 * Preserve important memories.
+
 * Organize life events.
+
 * Build a lifelong timeline.
+
 * Protect personal privacy.
+
 * Collaborate with trusted individuals.
+
 * Receive AI-assisted improvements.
+
 * Easily search historical information.
+
 
 ---
 
@@ -33,10 +40,15 @@ The platform encourages long-term preservation of family history by allowing col
 LifeChronicle demonstrates:
 
 * Modular architecture
+
 * Documentation-driven development
+
 * Enterprise software engineering
+
 * AI integration
+
 * Business rule implementation
+
 * Scalable system design
 
 making it an excellent reference project for future development.
@@ -48,10 +60,15 @@ making it an excellent reference project for future development.
 The architecture supports:
 
 * Additional languages
+
 * Advanced AI
+
 * Mobile applications
+
 * Enterprise deployment
+
 * Cloud integration
+
 * Continuous expansion
 
 without requiring major redesign.

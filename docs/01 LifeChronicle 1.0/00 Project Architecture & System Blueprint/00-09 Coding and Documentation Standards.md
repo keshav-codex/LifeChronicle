@@ -13,11 +13,17 @@ The objective is to maintain consistency, readability, maintainability, and long
 All code should follow these principles:
 
 * Readability
+
 * Simplicity
+
 * Reusability
+
 * Maintainability
+
 * Scalability
+
 * Security
+
 * Performance
 
 ---
@@ -25,10 +31,15 @@ All code should follow these principles:
 # 3. Python Coding Standards
 
 * Follow PEP 8 where practical.
+
 * Use meaningful variable names.
+
 * Keep functions focused on a single responsibility.
+
 * Avoid duplicated logic.
+
 * Prefer reusable services.
+
 * Write modular code.
 
 ---
@@ -36,10 +47,15 @@ All code should follow these principles:
 # 4. Django Standards
 
 * One business domain per application.
+
 * Thin views.
+
 * Business logic inside services.
+
 * Validators separated from views.
+
 * Reusable model methods.
+
 * Consistent URL organization.
 
 ---
@@ -49,9 +65,13 @@ All code should follow these principles:
 Documentation should be:
 
 * Clear
+
 * Professional
+
 * Version controlled
+
 * Updated with implementation
+
 * Written before major development
 
 ---
@@ -61,11 +81,17 @@ Documentation should be:
 Use consistent naming for:
 
 * Files
+
 * Classes
+
 * Functions
+
 * Variables
+
 * Database Tables
+
 * URLs
+
 * Templates
 
 Avoid abbreviations unless widely accepted.
@@ -83,8 +109,11 @@ Complex business logic should always be documented.
 # 8. Git Standards
 
 * Small commits
+
 * Meaningful commit messages
+
 * Feature-based development
+
 * Documentation updates alongside code
 
 ---
@@ -94,9 +123,13 @@ Complex business logic should always be documented.
 Every module should satisfy:
 
 * Documentation Complete
+
 * Business Rules Implemented
+
 * Validation Complete
+
 * Tests Written
+
 * Code Reviewed
 
 ---

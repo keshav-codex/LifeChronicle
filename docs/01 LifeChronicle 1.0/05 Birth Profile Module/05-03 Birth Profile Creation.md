@@ -12,18 +12,26 @@ The Birth Profile establishes the user's digital identity and becomes the founda
 The Birth Profile Creation module shall:
 
 Create the user's Birth Profile.
+
 Capture essential birth-related information.
+
 Validate all required information.
+
 Apply default privacy settings.
+
 Initialize the user's Timeline.
+
 Prevent access to the application until the Birth Profile is completed.
 3. Prerequisites
 
 Before creating a Birth Profile:
 
 The user shall have a registered account.
+
 The user shall be successfully authenticated.
+
 The account shall be active.
+
 No existing Birth Profile shall exist for the account.
 
 Each account shall have only one Birth Profile.
@@ -33,6 +41,7 @@ Each account shall have only one Birth Profile.
 The Birth Profile consists of the following sections.
 
 Section A – Primary Information
+
 Profile Photo *
 
 The Profile Photo is mandatory.
@@ -52,14 +61,23 @@ The application shall display the following message:
 The user may upload the image using:
 
 Camera
+
 Gallery
+
 Validation
+
 Maximum 1 image.
+
 Maximum file size: 2 MB.
+
 Supported formats:
+
 JPG
+
 JPEG
+
 PNG
+
 Full Name *
 
 Mandatory.
@@ -69,6 +87,7 @@ Childhood Nickname
 Optional.
 
 Section B – Birth Information
+
 Birth Date *
 
 Mandatory.
@@ -86,27 +105,37 @@ Automatically calculated from the Birth Date.
 Manual editing shall not be permitted.
 
 Section C – Delivery Information
+
 Delivery Type
 
 The user may select:
 
 Normal
+
 Surgery
+
 Delivery Place
 
 The user may select:
 
 Maternal Home
+
 Paternal Home
+
 Hospital
+
 Birth Center
+
 Other
+
 Delivery Place Name
 
 This field becomes mandatory only when:
 
 Hospital
+
 Birth Center
+
 Other
 
 is selected.
@@ -120,14 +149,19 @@ Do you want to add Birth Location?
 The user may choose:
 
 Yes
+
 No
 
 If Yes, the following fields shall be available:
 
 Address Line 1
+
 Address Line 2
+
 State
+
 Country
+
 Google Map
 
 Birth Location validation shall follow the Global Address Validation Rules defined by the application.
@@ -142,40 +176,66 @@ Users may modify privacy settings after the Birth Profile has been created.
 
 
 5. Birth Profile Creation Workflow
+
 Authentication Successful
+
           │
+
           ▼
+
 Open Birth Profile Form
+
           │
+
           ▼
+
 Complete Mandatory Information
+
           │
+
           ▼
+
 Upload Profile Photo
+
           │
+
           ▼
+
 System Validation
+
           │
+
           ▼
+
 Birth Profile Created
+
           │
+
           ▼
+
 Initialize Timeline
+
           │
+
           ▼
+
 Open Timeline Dashboard
 6. Completion Rules
 
 A Birth Profile shall be considered complete only when:
 
 All mandatory information has been provided.
+
 Validation is successful.
+
 The Profile Photo satisfies the configured validation rules.
 
 Upon successful completion:
 
 The Birth Profile shall be created.
+
 The Timeline shall be initialized automatically.
+
 The user shall be redirected to the Timeline Dashboard.
 
 No draft mode shall be available in Version 1.0.
@@ -185,12 +245,19 @@ No draft mode shall be available in Version 1.0.
 The Birth Profile Creation module follows these principles:
 
 One Birth Profile per account.
+
 Birth Profile is mandatory.
+
 Birth Profile is not a Timeline Event.
+
 Timeline access is not permitted until the Birth Profile is completed.
+
 Birth Day is automatically calculated.
+
 Birth Photo is preferred, but an Early Childhood Photo is accepted.
+
 Default privacy is Private.
+
 Timeline initialization occurs automatically after successful Birth Profile creation.
 8. Summary
 

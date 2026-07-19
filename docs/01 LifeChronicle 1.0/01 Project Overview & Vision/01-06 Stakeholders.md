@@ -13,13 +13,21 @@ LifeChronicle provides a centralized platform where users can preserve important
 Every event can include:
 
 * Title
+
 * Description
+
 * Images
+
 * Image Description
+
 * Categories
+
 * Date and Time
+
 * Location
+
 * Contributors
+
 * Privacy Settings
 
 ---
@@ -29,14 +37,23 @@ Every event can include:
 The solution consists of:
 
 * Secure Authentication
+
 * Birth Profile
+
 * Interactive Timeline
+
 * Structured Event Management
+
 * Travel Activities
+
 * Relationship Management
+
 * Collaborative Events
+
 * Notifications
+
 * AI Assistance
+
 * Administrative Management
 
 ---
@@ -46,10 +63,15 @@ The solution consists of:
 AI enhances the platform by:
 
 * Improving descriptions.
+
 * Suggesting categories.
+
 * Reviewing content quality.
+
 * Monitoring safety.
+
 * Generating reports.
+
 * Supporting administration.
 
 AI always provides recommendations while leaving final decisions to users.

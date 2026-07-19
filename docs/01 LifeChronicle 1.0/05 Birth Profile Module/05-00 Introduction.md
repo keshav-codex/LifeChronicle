@@ -14,20 +14,30 @@ A registered user must complete the Birth Profile before accessing the Timeline 
 The Birth Profile Module shall:
 
 Establish the user's digital identity.
+
 Create the foundation of the Life Timeline.
+
 Capture birth-related information.
+
 Maintain a single Birth Profile for each user.
+
 Support configurable privacy settings.
+
 Provide a consistent identity across the application.
 3. Scope
 
 The Birth Profile Module includes:
 
 Birth Profile Architecture
+
 Birth Profile Creation
+
 Birth Profile Update
+
 Birth Profile View
+
 Birth Profile Validation
+
 Birth Profile Business Rules
 
 The module focuses exclusively on establishing and maintaining the user's Birth Profile.
@@ -37,35 +47,56 @@ The module focuses exclusively on establishing and maintaining the user's Birth 
 The Birth Profile Module is designed to:
 
 Ensure every user has a single digital identity.
+
 Collect essential birth-related information.
+
 Maintain accurate and validated profile information.
+
 Initialize the user's Timeline.
+
 Provide a visually appealing profile presentation.
+
 Support multilingual operation.
+
 Integrate seamlessly with other LifeChronicle modules.
+
 5. Core Principles
 
 The Birth Profile Module follows these principles:
 
 One Birth Profile per registered user.
+
 Birth Profile is mandatory.
+
 Birth Profile is not an Event.
+
 Birth Profile is the root of the Timeline.
+
 Timeline access is available only after Birth Profile completion.
+
 Authentication information remains separate from personal profile information.
+
 Validation follows configurable business rules.
+
 Privacy is user-controlled and configuration-driven.
 6. Relationship with Other Modules
 
 The Birth Profile Module works closely with:
 
 User Authentication & Account Module
+
 Timeline & Event Module
+
 Relationship Module
+
 Media Module
+
 Location Module
+
 Privacy Module
+
 AI Intelligence Module
+
 Administration Module
 
 The Birth Profile provides the foundational identity upon which these modules operate.

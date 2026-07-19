@@ -11,10 +11,15 @@ This document provides a high-level overview of the core features included in Li
 Secure account management including:
 
 * Registration
+
 * Email Verification
+
 * Login
+
 * Social Login
+
 * Password Management
+
 * Account Recovery
 
 ---
@@ -26,8 +31,11 @@ Every user's timeline begins with a mandatory Birth Profile containing the root 
 Features include:
 
 * Birth Profile Creation
+
 * Profile Photo
+
 * Birth Information
+
 * Root Timeline Node
 
 ---
@@ -39,10 +47,15 @@ The interactive timeline is the heart of LifeChronicle.
 Users can:
 
 * View events chronologically
+
 * Navigate through life history
+
 * Search events
+
 * Filter events
+
 * View event details
+
 
 ---
 
@@ -51,11 +64,17 @@ Users can:
 Users can:
 
 * Create events
+
 * Edit events
+
 * Delete events
+
 * View events
+
 * Organize events using categories
+
 * Upload images
+
 * Add locations
 
 Travel events additionally support multiple travel activities.
@@ -67,8 +86,11 @@ Travel events additionally support multiple travel activities.
 Users can:
 
 * Create relationships
+
 * Send invitations
+
 * Accept invitations
+
 * Manage relationship privacy
 
 ---
@@ -80,8 +102,11 @@ Users may invite contributors to participate in selected events.
 Contributors can:
 
 * Add descriptions
+
 * Upload images
+
 * Add travel activities
+
 * Edit their own contributions
 
 ---
@@ -91,10 +116,15 @@ Contributors can:
 AI assists users by providing:
 
 * Category Suggestions
+
 * Description Refinement
+
 * Content Quality Review
+
 * AI Reports
+
 * AI Rule Engine
+
 * Safety Monitoring
 
 AI never modifies user content automatically.
@@ -106,15 +136,25 @@ AI never modifies user content automatically.
 Administrative capabilities include:
 
 * User Management
+
 * Staff Management
+
 * Department Management
+
 * Category Administration
+
 * AI Governance
+
 * Analytics Dashboard
+
 * Reports
+
 * Excel-based bulk administration.
+
 * Configurable system settings.
+
 * Dynamic application branding.
+
 * Configurable media support.
 
 ---
@@ -124,14 +164,19 @@ Administrative capabilities include:
 The notification system includes:
 
 * Notifications
+
 * Alerts
+
 * Warnings
 
 Supporting:
 
 * Relationship invitations
+
 * Event invitations
+
 * System announcements
+
 * AI recommendations
 
 ---

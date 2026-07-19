@@ -1,276 +1,243 @@
 06-11 Collaborative Event Management
 1. Introduction
 
-This document defines the functional requirements for Collaborative Event Management within LifeChronicle Version 1.0.
+This document defines the functional requirements for Collaborative Event Management in LifeChronicle Version 1.0.
 
 Collaborative Events allow multiple LifeChronicle users to preserve the same real-life experience while maintaining complete ownership of their individual Timeline events.
 
-Unlike traditional shared events, LifeChronicle does not create a single event owned by one user. Instead, every participant owns an independent event on their own Timeline, while the system internally links these events to create a collaborative experience.
+Rather than creating a shared event, the system links independent personal events through an internal collaboration record.
 
 2. Purpose
 
-The Collaborative Event Management module shall:
+The module shall:
 
 Preserve shared life experiences.
-Maintain independent ownership of personal events.
-Allow contributors to record their own memories.
+
+Support contributor invitations.
+
+Maintain independent event ownership.
+
 Generate AI-assisted collaborative summaries.
-Respect each participant's privacy settings.
-Support collaborative viewing without shared ownership.
+
+Respect participant privacy.
+
+Link related Timeline events without shared ownership.
 3. Actors
+
 Primary Actors
+
 Event Creator
+
 Contributor
+
 Secondary Actors
+
 System
+
 Artificial Intelligence
-4. Collaborative Event Philosophy
 
-LifeChronicle follows the principle that every Timeline belongs exclusively to its owner.
-
-A Collaborative Event is not a special event type.
-
-Instead:
-
-Every participant owns one independent event.
-Every event belongs to only one Timeline.
-The system internally links related events.
-No participant owns another participant's event.
-The collaboration exists only while two or more linked participants remain.
-5. Collaboration Workflow
-
-A user may invite contributors to almost any event.
-
-The Birth Profile cannot become a Collaborative Event.
-
-The invitation process is:
-
-Create Event
-
-↓
-
-Invite Contributor
-
-↓
-
-System creates an internal Collaboration Record
-
-↓
-
-Invitation sent
-
-↓
-
-Contributor accepts
-
-↓
-
-Contributor creates their own event
-
-↓
-
-Both events become linked
-
-Additional contributors may join using the same process.
-
-6. Invitation Process
-
-A collaboration invitation may be sent to any email address.
-
-Existing Relationship
-
-If the invited user already exists in the Relationship list:
-
-Collaboration Invitation is sent.
-Notification is generated.
-Email notification is sent.
-No Existing Relationship
-
-If no relationship exists:
-
-Relationship Invitation is sent.
-After the relationship is accepted,
-Collaboration Invitation becomes available.
-7. Invitation Rules
+4. Collaboration Architecture
 
 The system shall ensure:
 
-Users cannot invite themselves.
-Existing contributors cannot be invited again.
-Duplicate pending invitations are not permitted.
-Removed contributors may be invited again.
-Maximum contributor limits are configuration-driven.
-8. Internal Collaboration Record
+Every participant owns one independent event.
 
-Sending the first collaboration invitation creates an internal collaboration record.
+Every event belongs to only one Timeline.
 
-This record is system-managed and is never directly editable by users.
+Participants edit only their own events.
 
-It maintains:
+The system internally links related events.
+
+The collaboration exists while at least two linked participants remain.
+
+The Birth Profile cannot become a Collaborative Event.
+
+5. Invitation Process
+
+A creator may invite contributors by email.
+
+Existing relatives receive a Collaboration Invitation.
+
+Non-relatives receive a Relationship Invitation first.
+
+Collaboration becomes available only after the relationship is established.
+
+The system shall prevent:
+
+Self invitations.
+
+Duplicate pending invitations.
+
+Duplicate contributors.
+
+Contributor limits are configuration-driven.
+
+6. Internal Collaboration Record
+
+The first collaboration invitation creates an internal collaboration record.
+
+The record maintains:
 
 Participant references
+
 AI-generated collaborative title
+
 AI-generated collaborative description
-Combined image collection
+
+Combined image gallery
+
 Combined location collection
 
-The internal collaboration record exists only while collaboration is active.
+The record is system-managed and never directly editable.
 
-9. Independent Personal Events
+7. Independent Personal Events
 
-Every accepted contributor creates an independent event.
+Each participant maintains their own event, including:
 
-Each participant may maintain their own:
+Title
 
-Event Title
-Event Description
+Description
+
 Cover Image
+
 Travel Activities
+
 Locations
+
 Privacy Settings
 
-All standard Event validation rules apply.
+Standard Event Management rules apply to every participant independently.
 
-Every event appears independently on its owner's Timeline.
+8. AI Collaborative Summary
 
-10. Artificial Intelligence
+The system continuously regenerates the collaborative summary using only contributions currently visible according to privacy rules.
 
-Artificial Intelligence continuously analyzes visible participant contributions.
-
-AI generates:
-
-Collaborative Title
-Collaborative Description
-
-These summaries are regenerated whenever:
-
-A participant updates their event.
-A participant joins.
-A participant leaves.
-Participant visibility changes due to privacy settings.
-
-AI shall generate summaries using only contributions currently visible according to privacy rules.
-
-11. Collaborative Event View
-
-Every participant views their own event as a normal Timeline event.
-
-If the event belongs to a collaboration, an additional option is available:
-
-View Collaborative Summary
-
-The Collaborative Summary displays:
+The summary includes:
 
 AI-generated collaborative title
+
 AI-generated collaborative description
+
 Combined image gallery
+
 Combined location collection
 
-The Collaborative Summary is read-only.
+The collaborative summary is read-only.
 
-Users cannot directly edit AI-generated collaborative content.
+9. Privacy
 
-12. Privacy
+Each participant controls the visibility of their own contribution.
 
-Every participant controls the visibility of their own contribution.
+Privacy changes immediately affect:
 
-If a participant changes privacy:
+Collaborative summaries
 
-The collaboration remains active.
-Hidden contributions disappear from the collaborative summary.
-Hidden images disappear from the combined gallery.
-Hidden locations disappear from the combined location collection.
+Combined galleries
 
-When visibility is restored, the information automatically becomes available again.
+Combined locations
 
-Privacy always follows the application's hierarchical privacy model.
+The collaboration remains active unless the participant leaves.
 
-13. Relationship Changes
+Privacy follows the application's hierarchical privacy model.
 
-Removing or placing a relationship on hold does not automatically terminate collaboration.
-
-The system shall:
-
-Preserve collaboration links.
-Respect updated privacy permissions.
-Continue generating collaborative summaries using only visible contributions.
-14. Leaving Collaboration
+10. Collaboration Lifecycle
 
 A participant may leave collaboration at any time.
 
 When leaving:
 
-Their personal Timeline event remains unchanged.
-Their collaboration reference is removed.
-Their images are removed from the combined gallery.
-Their locations are removed from the combined locations.
-AI-generated collaborative title is regenerated.
-AI-generated collaborative description is regenerated.
+Their personal event remains unchanged.
 
-Voluntarily leaving collaboration does not generate notifications.
+Their collaboration link is removed.
 
-15. Collaboration Lifecycle
-
-The collaboration remains active while at least two linked participants exist.
+AI collaborative content is regenerated.
 
 If only one participant remains:
 
 The internal collaboration record is automatically deleted.
-The remaining participant's event continues as a standard personal event.
-No user event is deleted.
-16. Automatic Cleanup
 
-When the first collaboration invitation is sent:
+The remaining event continues as a normal personal event.
 
-An internal collaboration record is created.
+If no invitation is accepted within the configured collaboration initialization period (Version 1.0: 60 hours), the internal collaboration record is automatically removed while preserving audit logs.
 
-If no contributor accepts within 60 hours:
-
-The internal collaboration record is automatically deleted.
-Pending collaboration invitations become invalid.
-Audit logs remain permanently preserved.
-17. Business Rules
+11. Business Rules
 
 The system shall ensure:
 
 Every participant owns exactly one event.
-Collaborative events never create shared ownership.
-Contributors may edit only their own event.
-Contributors may remove only themselves from collaboration.
-AI collaborative content is always read-only.
+
+No shared event ownership exists.
+
+Contributors edit only their own events.
+
+Contributors may remove only themselves.
+
+AI collaborative content is read-only.
+
 Collaboration limits are configuration-driven.
-Operational limits are never hardcoded.
-All collaboration validation follows System Configuration.
-18. Validation Rules
+
+No operational limits are hardcoded.
+
+12. Validation & Error Handling
 
 The system shall validate:
 
-Contributor existence.
-Invitation eligibility.
-Duplicate invitations.
-Configuration-driven contributor limits.
-Collaboration status.
-Participant permissions.
+Contributor eligibility
 
-Validation shall occur before invitations are processed.
+Invitation status
 
-19. Error Handling
+Duplicate invitations
+
+Participant permissions
+
+Configuration-driven limits
 
 Examples include:
 
-User not found.
-Self-invitation.
-Contributor already participating.
-Invitation already pending.
-Collaboration limit exceeded.
-Permission denied.
+User not found
 
-Errors shall be presented using user-friendly messages without exposing internal implementation details.
+Self invitation
 
-20. Summary
+Duplicate contributor
 
-Collaborative Event Management enables multiple users to preserve shared life experiences while maintaining complete ownership of their individual Timeline events. By linking independent events through an internal collaboration record and generating AI-assisted collaborative summaries, LifeChronicle delivers a unique collaboration model that respects privacy, supports independent storytelling, and preserves the integrity of every participant's personal Timeline.
+Invitation already pending
 
-21. Next Document
+Collaboration limit exceeded
 
-06-12 Timeline Business Rules
+Permission denied
+
+Errors shall be presented using user-friendly messages.
+
+13. Future Enhancements
+
+Future versions may extend Collaborative Events with features such as:
+
+Group Collaboration
+
+Shared Albums
+
+Shared Travel Planning
+
+Audio, Video and Document Contributions
+
+Comments and Reactions
+
+Real-time Collaboration
+
+Collaboration Roles and Permissions
+
+Collaboration History
+
+Shared AI Reports
+
+Dedicated Collaborative Event Module
+
+The Version 1.0 architecture has been designed to support these enhancements without requiring major redesign.
+
+14. Summary
+
+Collaborative Event Management enables multiple users to preserve shared experiences while maintaining complete ownership of their individual Timeline events. By linking independent events through an internal collaboration record and generating AI-assisted collaborative summaries, LifeChronicle provides a privacy-aware, scalable, and future-ready collaboration model while keeping Version 1.0 focused on its core functionality.
+
+15. Next Document
+
+06-12 Category Management

@@ -16,20 +16,35 @@ The primary user journey is:
 
 ```text
 Landing Page
+
         ↓
+
 Registration / Social Login
+
         ↓
+
 Email Verification
+
         ↓
+
 Login
+
         ↓
+
 Birth Profile Creation
+
         ↓
+
 Birth Profile Validation
+
         ↓
+
 Timeline Initialization
+
         ↓
+
 Timeline Dashboard
+
 ```
 
 Users cannot access the timeline until the mandatory Birth Profile has been successfully completed.
@@ -41,12 +56,28 @@ Users cannot access the timeline until the mandatory Birth Profile has been succ
 From the Timeline Dashboard, users can:
 
 * View Birth Profile
+
 * Create Events
+
 * View Event Details
+
 * Search Timeline
+
 * Apply Filters
+
 * Navigate by Year or Month
+
+* View and Manage Relationship
+
+* View Event Details
+
 * Generate AI Reports
+
+* View and Manage Login Profile
+
+* View and Manage Privacy
+
+* View and Manage Other Options
 
 The timeline serves as the central navigation hub of the application.
 
@@ -57,9 +88,13 @@ The timeline serves as the central navigation hub of the application.
 Users can:
 
 * View Relationships
+
 * Send and manage Invitations
+
 * Receive and manage Invitations
+
 * Manage Existing Relationships
+
 * Configure Privacy
 
 ---
@@ -69,10 +104,15 @@ Users can:
 Users can:
 
 * Create Events
+
 * View Events
+
 * Edit Events
+
 * Delete Events
+
 * Share Events
+
 * View Contributors
 
 Travel events additionally provide travel activity management.
@@ -84,10 +124,15 @@ Travel events additionally provide travel activity management.
 The profile area includes:
 
 * Login Credentials
+
 * Birth Profile
+
 * Relationship Profile
+
 * Privacy Settings
+
 * Notifications
+
 * Help
 
 ---
@@ -99,8 +144,11 @@ Staff members navigate through role-specific dashboards.
 Examples:
 
 * Super Admin Dashboard
+
 * Admin Dashboard
+
 * Department Dashboard
+
 * Executive Dashboard
 
 Available options depend on assigned permissions.
@@ -112,9 +160,13 @@ Available options depend on assigned permissions.
 AI assistance appears contextually throughout the application, including:
 
 * Event creation
+
 * Category selection
+
 * Description refinement
+
 * Report generation
+
 * Administrative review
 
 AI is integrated into workflows rather than presented as a separate module.
@@ -126,10 +178,15 @@ AI is integrated into workflows rather than presented as a separate module.
 The navigation system follows these principles:
 
 * Simplicity
+
 * Consistency
+
 * Minimal clicks
+
 * Clear hierarchy
+
 * Responsive design
+
 * Context-aware actions
 
 ---

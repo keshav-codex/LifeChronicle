@@ -10,26 +10,39 @@ AI shall operate within controlled boundaries to protect user privacy, maintain 
 The module shall:
 
 Ensure responsible AI usage.
+
 Protect user privacy.
+
 Detect harmful content.
+
 Monitor AI operations.
+
 Support administrative oversight.
+
 3. AI Governance
 
 The system shall ensure:
 
 AI assists users without replacing user decisions.
+
 AI operates according to configured business rules.
+
 AI uses only authorized application data.
+
 AI processing follows application permissions.
+
 AI features may be enabled or disabled through configuration.
+
 4. AI Safety
 
 AI may detect:
 
 Harmful Content
+
 Adult Content
+
 Violent Content
+
 Spam or Abusive Content
 
 When appropriate, AI shall generate alerts for administrative review.
@@ -41,11 +54,17 @@ AI recommendations remain advisory and never automatically modify user content.
 The system shall record AI operations, including:
 
 Request Type
+
 Feature Used
+
 AI Provider
+
 Processing Status
+
 Processing Time
+
 Success or Failure
+
 Error Information
 
 AI logs support monitoring, troubleshooting, and future analytics.

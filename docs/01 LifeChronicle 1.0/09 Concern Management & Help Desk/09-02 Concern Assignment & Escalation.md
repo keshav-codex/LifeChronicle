@@ -10,16 +10,23 @@ The objective is to ensure every concern is handled by the appropriate staff mem
 The module shall:
 
 Assign concerns to staff.
+
 Support reassignment.
+
 Support escalation.
+
 Notify relevant users.
+
 Record all operational activities.
+
 3. Concern Assignment
 
 Authorized administrators may:
 
 Assign a concern.
+
 Reassign a concern.
+
 Monitor assignment status.
 
 Each concern shall be assigned to only one staff member at a time.
@@ -29,8 +36,11 @@ Each concern shall be assigned to only one staff member at a time.
 Support Staff may escalate concerns when:
 
 Additional permissions are required.
+
 Administrative approval is required.
+
 The concern cannot be resolved.
+
 Other configured escalation reasons apply.
 
 Escalation reasons are maintained through Master Data.
@@ -40,8 +50,11 @@ Escalation reasons are maintained through Master Data.
 AI may assist by:
 
 Summarizing long conversations.
+
 Detecting duplicate concerns.
+
 Suggesting possible resolutions.
+
 Recommending escalation.
 
 AI recommendations remain optional.
@@ -51,21 +64,33 @@ AI recommendations remain optional.
 The system shall notify relevant users when:
 
 A concern is assigned.
+
 A concern is reassigned.
+
 A concern is escalated.
+
 A reply is received.
+
 A concern is resolved.
+
 A concern is closed.
+
 A concern is reopened.
+
 7. Business Rules
 
 The system shall ensure:
 
 Only authorized staff may manage assignments.
+
 Every assignment is recorded in audit logs.
+
 Escalation follows configured business rules.
+
 Reassignment preserves complete concern history.
+
 Operational limits are configuration-driven.
+
 8. Summary
 
 Concern Assignment & Escalation ensures that user concerns are handled by the appropriate staff while supporting reassignment, escalation, AI assistance, notifications, and complete auditability.

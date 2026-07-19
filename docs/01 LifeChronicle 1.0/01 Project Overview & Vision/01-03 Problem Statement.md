@@ -19,11 +19,17 @@ The platform is committed to maintaining user privacy, promoting meaningful docu
 The mission is achieved by:
 
 * Building a secure platform.
+
 * Maintaining structured life records.
+
 * Encouraging meaningful documentation.
+
 * Providing AI-assisted improvements.
+
 * Protecting user privacy.
+
 * Supporting collaborative memories.
+
 * Delivering a high-quality user experience.
 
 ---
@@ -33,10 +39,15 @@ The mission is achieved by:
 LifeChronicle is committed to:
 
 * Data ownership.
+
 * Privacy by design.
+
 * Documentation-driven development.
+
 * High software quality.
+
 * Modular architecture.
+
 * Continuous improvement.
 
 ---

@@ -10,10 +10,15 @@ The architecture is designed around modular development, configuration-driven be
 The System Architecture Overview shall:
 
 Define the overall application architecture.
+
 Describe major system components.
+
 Explain component interactions.
+
 Establish architectural standards.
+
 Support future scalability and maintainability.
+
 3. Architectural Style
 
 LifeChronicle follows a Modular Monolithic Architecture based on the Django framework.
@@ -23,57 +28,101 @@ The application is divided into independent modules (apps), each responsible for
 This architecture provides:
 
 Simpler development and deployment.
+
 Clear separation of responsibilities.
+
 Easier maintenance.
+
 Future migration to microservices if required.
+
 4. High-Level Architecture
+
                     Users
+
                       │
+
                       ▼
+
              Web Browser / Mobile Browser
+
                       │
+
                       ▼
+
                 Django Application
+
                       │
+
      ┌────────────────┼────────────────┐
+
      │                │                │
+
  Authentication   Business Logic   Administration
+
      │                │                │
+
      └────────────────┼────────────────┘
+
                       │
+
                Artificial Intelligence
+
                       │
+
                       ▼
+
                 PostgreSQL Database
+
                       │
+
                       ▼
+
              File Storage / Media Storage
+
 5. Major Components
 
 The system consists of the following primary components:
 
 Presentation Layer
+
 Application Layer
+
 Business Logic Layer
+
 Artificial Intelligence Layer
+
 Data Access Layer
+
 Database Layer
+
 File Storage Layer
+
 Configuration Layer
+
 6. Application Modules
 
 The architecture consists of modular Django applications, including:
 
 Accounts
+
 Birth Profile
+
 Events
+
 Relationships
+
 Media
+
 Locations
+
 Categories
+
 Concerns
+
 Administration
+
 AI Intelligence
+
 Communication
 
 Additional modules may be introduced without affecting the overall architecture.
@@ -83,35 +132,76 @@ Additional modules may be introduced without affecting the overall architecture.
 LifeChronicle follows these architectural principles:
 
 Modular Design
+
 Separation of Concerns
+
 Configuration-Driven Development
+
 Privacy First
+
 AI-Assisted, Human-Controlled
+
 Role-Based Access Control (RBAC)
+
 Reusability
+
 Scalability
+
 Maintainability
+
 8. Benefits
 
 The selected architecture provides:
 
 High maintainability.
+
 Reduced code duplication.
+
 Easier testing.
+
 Better scalability.
+
 Improved security.
+
 Simplified future enhancements.
+
+10. Technology Used
+
+Technology	Purpose
+
+Django	Backend Framework
+
+PostgreSQL	Database
+
+Pandas	Data Processing, Reporting, Excel Operations
+
+Matplotlib	Administrative Dashboard Charts
+
+Gemini API	AI Assistance
+
+Bootstrap	Responsive UI
+
+JavaScript	Client-side Interaction
+
+
 9. Future Evolution
 
 The architecture is designed to support future enhancements such as:
 
 REST APIs
+
 Mobile Applications
+
 Subscription Plans
+
 Cloud Storage
+
 Multiple AI Providers
+
 Microservices (if required)
+
 Distributed File Storage
+
 10. Summary
 
 The System Architecture Overview establishes the technical foundation of LifeChronicle by defining the overall application structure, major components, architectural principles, and long-term scalability strategy.

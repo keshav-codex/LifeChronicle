@@ -1,4 +1,5 @@
 11-13 Shared Infrastructure ERD
+
 1. Introduction
 
 The Shared Infrastructure ERD defines the reusable system services shared across multiple LifeChronicle modules.
@@ -10,35 +11,59 @@ The Shared Infrastructure module contains common entities that support the entir
 The Shared Infrastructure domain consists of the following entities:
 
 Media
+
 Location
+
 Notification
+
 Alert
+
 AuditLog
+
 SystemConfiguration
+
 ReferenceNumber
+
 ImportHistory
+
 3. Entity Relationships
+
 Shared Infrastructure
 
 ├── Media
+
 ├── Location
+
 ├── Notification
+
 ├── Alert
+
 ├── AuditLog
+
 ├── SystemConfiguration
+
 ├── ReferenceNumber
+
 └── ImportHistory
 
 These entities are shared by multiple business modules including:
 
 Accounts
+
 Birth Profile
+
 Timeline & Events
+
 Relationship Management
+
 Concern Management
+
 Administration
+
 Artificial Intelligence
+
 4. Entity Responsibilities
+
 Media
 
 Provides centralized storage and management of application media files.
@@ -76,13 +101,21 @@ Maintains the history of Excel-based data imports performed within the applicati
 The Shared Infrastructure domain shall ensure:
 
 Shared services remain independent of business modules.
+
 Media and Location services are reusable throughout the application.
+
 Notifications provide informational messages only.
+
 Alerts identify operational or security-related events.
+
 Audit Logs are permanently preserved.
+
 System Configuration controls application behavior without code changes.
+
 Reference Numbers are generated using configurable business rules.
+
 Import History records every Excel import operation.
+
 6. Summary
 
 The Shared Infrastructure ERD establishes reusable system services that provide a common foundation for all LifeChronicle modules while supporting scalability, maintainability, and configuration-driven development.

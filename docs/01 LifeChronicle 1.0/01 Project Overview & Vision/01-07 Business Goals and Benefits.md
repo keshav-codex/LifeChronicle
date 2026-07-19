@@ -13,12 +13,19 @@ LifeChronicle is intended for individuals who wish to preserve, organize, and re
 Typical users include:
 
 * Students
+
 * Working Professionals
+
 * Families
+
 * Travellers
+
 * Researchers documenting personal journeys
+
 * Memory enthusiasts
+
 * Individuals preserving family history
+
 
 ---
 
@@ -27,8 +34,11 @@ Typical users include:
 The platform also supports:
 
 * Family members invited to collaborative events.
+
 * Friends and relatives contributing shared memories.
+
 * Administrative staff managing the platform.
+
 * Support executives handling user concerns.
 
 ---
@@ -38,8 +48,11 @@ The platform also supports:
 Administrative roles include:
 
 * Super Admin
+
 * Admin
+
 * Department Admin
+
 * Executive
 
 Each role has clearly defined responsibilities and permissions.
@@ -51,9 +64,13 @@ Each role has clearly defined responsibilities and permissions.
 The documentation and architecture are also intended for:
 
 * Software Developers
+
 * Database Designers
+
 * AI Engineers
+
 * Quality Assurance Engineers
+
 * Future Project Contributors
 
 ---

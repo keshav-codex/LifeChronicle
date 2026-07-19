@@ -13,10 +13,15 @@ The deployment architecture is designed to support both development and producti
 The deployment architecture aims to:
 
 * Provide a secure production environment.
+
 * Ensure application availability.
+
 * Simplify deployment.
+
 * Support future scaling.
+
 * Maintain data integrity.
+
 * Enable continuous deployment.
 
 ---
@@ -26,13 +31,21 @@ The deployment architecture aims to:
 LifeChronicle Version 1.0 is planned for deployment using:
 
 | Component        | Technology             |
+
 | ---------------- | ---------------------- |
+
 | Web Application  | Django                 |
+
 | WSGI Server      | Gunicorn               |
+
 | Database         | PostgreSQL             |
+
 | Hosting Platform | Render                 |
+
 | Version Control  | GitHub                 |
+
 | SSL              | HTTPS                  |
+
 | Domain           | Custom Domain (Future) |
 
 ---
@@ -40,6 +53,7 @@ LifeChronicle Version 1.0 is planned for deployment using:
 # 4. Deployment Flow
 
 ```text
+
 Developer
 
 ↓
@@ -61,6 +75,7 @@ PostgreSQL Database
 ↓
 
 End Users
+
 ```
 
 ---
@@ -69,16 +84,23 @@ End Users
 
 Separate environments should be maintained for:
 
+
 * Development
+
 * Testing
+
 * Production
 
 Each environment maintains independent:
 
 * Database
+
 * Secret Keys
+
 * Environment Variables
+
 * Email Configuration
+
 * AI Configuration
 
 ---
@@ -90,9 +112,13 @@ Sensitive information should never be stored in source code.
 Examples include:
 
 * Secret Key
+
 * Database Credentials
+
 * Email Credentials
+
 * AI API Keys
+
 * Security Settings
 
 ---
@@ -106,8 +132,11 @@ PostgreSQL
 The production database should:
 
 * Perform automatic backups.
+
 * Maintain transaction integrity.
+
 * Use indexed queries.
+
 * Support future scaling.
 
 ---
@@ -117,13 +146,17 @@ The production database should:
 Static files:
 
 * CSS
+
 * JavaScript
+
 * Icons
+
 * Fonts
 
 Media files:
 
 * Birth Profile Images
+
 * Event Images
 
 Media storage should remain separate from source code.
@@ -135,11 +168,17 @@ Media storage should remain separate from source code.
 Production deployment should include:
 
 * HTTPS
+
 * Secure Cookies
+
 * CSRF Protection
+
 * Environment Variables
+
 * Database Security
+
 * Role-Based Access Control
+
 * Audit Logging
 
 ---
@@ -149,9 +188,13 @@ Production deployment should include:
 Future monitoring may include:
 
 * Error Monitoring
+
 * Performance Monitoring
+
 * AI Monitoring
+
 * Database Monitoring
+
 * System Health Monitoring
 
 ---
@@ -161,9 +204,13 @@ Future monitoring may include:
 The architecture supports migration to:
 
 * Docker
+
 * DigitalOcean
+
 * AWS
+
 * Azure
+
 * Kubernetes
 
 without major code changes.

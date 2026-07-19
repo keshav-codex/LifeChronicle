@@ -13,10 +13,15 @@ People create thousands of memories throughout their lives, but these memories a
 Common problems include:
 
 * Photos stored in multiple locations.
+
 * Events remembered but never documented.
+
 * Important life milestones becoming difficult to recall.
+
 * Information spread across social media, cloud storage, messaging applications, and personal devices.
+
 * Lack of chronological organization.
+
 * Difficulty preserving family history.
 
 ---
@@ -28,9 +33,13 @@ Current applications typically focus on only one aspect of personal information.
 Examples:
 
 * Photo galleries manage images.
+
 * Notes applications store text.
+
 * Calendars manage schedules.
+
 * Social media emphasizes public sharing.
+
 * Cloud storage focuses on file storage.
 
 None of these provide a unified personal life timeline.
@@ -42,11 +51,18 @@ None of these provide a unified personal life timeline.
 There is a need for a platform that enables users to:
 
 * Preserve memories.
+
 * Organize events chronologically.
+
 * Connect related experiences.
+
 * Maintain privacy.
+
+
 * Record meaningful life stories.
+
 * Collaborate with family and trusted individuals.
+
 * Receive intelligent assistance without losing control over personal information.
 
 ---

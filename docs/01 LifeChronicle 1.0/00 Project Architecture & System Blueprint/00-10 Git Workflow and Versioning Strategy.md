@@ -13,10 +13,15 @@ A consistent version control strategy enables reliable development, collaboratio
 The Git workflow is designed to:
 
 * Maintain a complete development history.
+
 * Protect the main codebase.
+
 * Support incremental feature development.
+
 * Simplify bug fixes.
+
 * Enable reliable releases.
+
 * Preserve documentation alongside code.
 
 ---
@@ -26,6 +31,7 @@ The Git workflow is designed to:
 LifeChronicle uses:
 
 * Git
+
 * GitHub
 
 Git serves as the single source of truth for source code, documentation, configuration, and project assets.
@@ -37,21 +43,33 @@ Git serves as the single source of truth for source code, documentation, configu
 Recommended branches:
 
 ```text
+
 main
+
 develop
+
 feature/*
+
 bugfix/*
+
 hotfix/*
+
 release/*
+
 ```
 
 Branch responsibilities:
 
 * **main** – Production-ready code.
+
 * **develop** – Active development.
+
 * **feature/** – Individual feature implementation.
+
 * **bugfix/** – Non-production bug fixes.
+
 * **hotfix/** – Critical production fixes.
+
 * **release/** – Release preparation.
 
 ---
@@ -61,18 +79,23 @@ Branch responsibilities:
 Every commit should:
 
 * Represent one logical change.
+
 * Have a meaningful message.
+
 * Be atomic.
+
 * Include related documentation updates where applicable.
 
 Examples:
 
 ```text
+
 Add Birth Profile validation rules
 
 Implement AI category suggestion service
 
 Update Timeline module documentation
+
 ```
 
 ---
@@ -84,16 +107,23 @@ Versioning follows Semantic Versioning.
 Format:
 
 ```text
+
 Major.Minor.Patch
+
 ```
 
 Example:
 
 ```text
+
 1.0.0
+
 1.1.0
+
 1.1.1
+
 2.0.0
+
 ```
 
 ---
@@ -111,8 +141,11 @@ Every significant architectural or functional change should be reflected in the 
 Recommended practices:
 
 * Protect the `main` branch.
+
 * Review major changes before merging.
+
 * Maintain a clean commit history.
+
 * Tag official releases.
 
 ---
@@ -122,9 +155,13 @@ Recommended practices:
 As the project grows, the Git workflow can be expanded to support:
 
 * Pull Requests
+
 * Code Reviews
+
 * Automated Testing
+
 * Continuous Integration
+
 * Continuous Deployment
 
 ---

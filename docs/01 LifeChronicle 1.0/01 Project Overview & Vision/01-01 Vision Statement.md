@@ -29,12 +29,19 @@ Instead, it acts as a private digital archive where users can safely preserve th
 Key differences include:
 
 * Personal ownership of data.
+
 * Chronological life timeline.
+
 * Structured event organization.
+
 * AI-assisted content improvement.
+
 * Relationship-aware memories.
+
 * Collaborative event contributions.
+
 * Long-term digital preservation.
+
 * Privacy-first architecture.
 
 ---
@@ -52,14 +59,23 @@ Events are organized into a single **Timeline** beginning with the user's **Birt
 Each event may contain:
 
 * Title
+
 * Description
+
 * Images
+
 * Image Description
+
 * Date and Time
+
 * Location
+
 * Categories
+
 * Contributors
+
 * Privacy Settings
+
 * AI Suggestions
 
 Together, these events create a complete digital life story.
@@ -129,10 +145,15 @@ Allow invited users to contribute their own memories, descriptions, images, and 
 AI assists users through:
 
 * Category Suggestions
+
 * Description Refinement
+
 * Content Quality Review
+
 * AI Reports
+
 * AI Rule Engine
+
 * Safety Monitoring
 
 AI never replaces user decisions.
@@ -144,10 +165,15 @@ AI never replaces user decisions.
 Comprehensive administration system including:
 
 * Staff Management
+
 * Department Management
+
 * Analytics Dashboard
+
 * Category Management
+
 * AI Governance
+
 * User Management
 
 ---
@@ -163,12 +189,19 @@ Concern management, ticket handling, and user assistance.
 LifeChronicle follows several guiding principles:
 
 * Simplicity
+
 * Privacy First
+
 * User Ownership
+
 * Modular Design
+
 * Documentation-Driven Development
+
 * AI as an Assistant
+
 * Scalability
+
 * Long-Term Maintainability
 
 Every feature introduced into the application must support these principles.
@@ -180,13 +213,21 @@ Every feature introduced into the application must support these principles.
 LifeChronicle Version 1.0 is developed using:
 
 | Layer           | Technology                       |
+
 | --------------- | -------------------------------- |
+
 | Backend         | Django                           |
+
 | Database        | PostgreSQL                       |
+
 | Frontend        | HTML, CSS, Bootstrap, JavaScript |
+
 | AI              | Large Language Models (LLM)      |
+
 | Analytics       | Pandas                           |
+
 | Charts          | Matplotlib                       |
+
 | Version Control | Git & GitHub                     |
 
 ---

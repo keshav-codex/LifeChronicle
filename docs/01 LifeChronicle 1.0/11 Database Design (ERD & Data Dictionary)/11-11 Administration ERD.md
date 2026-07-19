@@ -1,4 +1,5 @@
 11-11 Administration ERD
+
 1. Introduction
 
 The Administration ERD defines the entities responsible for managing staff members, roles, permissions, departments, and administrative operations within LifeChronicle.
@@ -16,18 +17,32 @@ TThe Administration domain consists of the following entities:
 The domain integrates with:
 
 Login Profile
+
 Master Data
+
 Audit
+
 Artificial Intelligence
+
 3. Entity Relationships
+
 LoginProfile (1:1)
+
         │
+
         ▼
+
       Staff
+
         │
+
         ├── StaffRole (1:N)
+
+
         ├── AdministrativeActivityLog (1:N)
+
         ├── Department (Master Data)
+
         └── Designation (Master Data)
 
 StaffRole
@@ -69,14 +84,23 @@ Supports operational reporting, performance monitoring, and administrative audit
 The Administration domain shall ensure:
 
 Every Staff member is linked to exactly one Login Profile.
+
 A Staff member may have multiple Roles.
+
 Roles determine application permissions.
+
 Permissions are assigned to Roles, not directly to Staff.
+
 Departments and Designations are maintained through Master Data.
+
 Dashboard analytics are generated dynamically.
+
 Reports are generated on demand and may be exported as Excel or PDF.
+
 Staff activities are permanently recorded.
+
 System-wide auditing is maintained through the shared Audit service.
+
 6. Summary
 
 The Administration ERD establishes a flexible role-based administration framework supporting staff management, permissions, departments, operational tracking, reporting, and future organizational growth.

@@ -21,14 +21,23 @@ It combines structured life events, relationships, memories, locations, media, a
 LifeChronicle provides several unique advantages:
 
 * Unified chronological timeline.
+
 * Birth-to-present life journey.
+
 * Structured event management.
+
 * AI-assisted content improvement.
+
 * Collaborative events.
+
 * Relationship-aware memories.
+
 * Privacy-first architecture.
+
 * Modular and scalable system design.
+
 * Documentation-driven development.
+
 * Multilingual-ready architecture.
 
 ---
@@ -40,10 +49,15 @@ Unlike conventional applications, AI is deeply integrated throughout the platfor
 AI assists users by:
 
 * Suggesting categories.
+
 * Refining descriptions.
+
 * Reviewing content quality.
+
 * Monitoring safety.
+
 * Generating timeline reports.
+
 * Assisting administration.
 
 AI recommendations remain optional, ensuring users retain full control over their content.
@@ -55,12 +69,19 @@ AI recommendations remain optional, ensuring users retain full control over thei
 The project follows enterprise software engineering principles including:
 
 * Modular Django applications.
+
 * Layered architecture.
+
 * Business rule separation.
+
 * Reusable components.
+
 * Master data management.
+
 * Translation architecture.
+
 * AI Rule Engine.
+
 * Comprehensive documentation.
 
 ---

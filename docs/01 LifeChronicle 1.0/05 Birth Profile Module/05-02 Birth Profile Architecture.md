@@ -12,74 +12,120 @@ The Birth Profile serves as the primary personal identity layer and provides the
 The Birth Profile Architecture shall:
 
 Establish a single personal identity for each user.
+
 Separate authentication from personal information.
+
 Provide a centralized profile structure.
+
 Support future expansion.
+
 Maintain privacy and security.
+
 Enable seamless integration with other modules.
 3. Architectural Principles
 
 The Birth Profile Architecture follows these principles:
 
 One Birth Profile per User.
+
 Separation of Authentication and Personal Information.
+
 Privacy by Default.
+
 Configuration-Driven Validation.
+
 Modular Design.
+
 Multilingual Support.
+
 Extensible Data Structure.
 
 4. High-Level Architecture
+
                     User Account
+
                          │
+
                          ▼
+
                   Birth Profile
+
                          │
+
       ┌──────────────────┼──────────────────┐
+
       │                  │                  │
+
 Personal Info      Birth Information   Birth Media
+
       │                  │                  │
+
       └──────────────────┼──────────────────┘
+
                          │
+
                   Privacy Settings
+
                          │
+
                          ▼
+
               Timeline Initialization
+
                          │
+
                          ▼
+
                 Timeline Dashboard
 
 The Birth Profile acts as the bridge between the authenticated user and the user's personal digital timeline.
 
-
 5. Presentation Architecture
 
 Birth Profile
-      │
-      ├── Owner View
-      │       └── Complete Profile
-      │
-      └── Other User View
-              └── Based on Privacy Rules
 
+      │
+
+      ├── Owner View
+
+      │       └── Complete Profile
+
+      │
+
+      └── Other User View
+
+              └── Based on Privacy Rules
 
 6. Profile Components
 
 The Birth Profile consists of the following logical components:
 
 Personal Information
+
 Full Name
+
 Childhood Nickname (Optional)
+
 Birth Information
+
 Birth Date
+
 Birth Time (Optional)
+
 Birth Day (Automatically Calculated)
+
 Birth Media
+
 Birth Time Photo
+
 Early Childhood Photo (Alternative)
+
 Privacy
+
 Birth Profile Visibility
+
 Media Visibility
+
 Information Sharing Preferences
 
 7. Module Relationships
@@ -87,10 +133,15 @@ Information Sharing Preferences
 The Birth Profile provides information to:
 
 Timeline Module
+
 Event Management Module
+
 Relationship Management Module
+
 Media Management Module
+
 AI Intelligence Module
+
 Personal Reports Module
 
 The Birth Profile does not manage these modules directly; it provides foundational information where required.
@@ -102,8 +153,11 @@ The authenticated user owns the Birth Profile.
 The user may:
 
 View the profile.
+
 Update editable information.
+
 Upload or replace media.
+
 Configure privacy settings.
 
 Administrative access follows the authorization policies defined in the Administration Module.
@@ -113,20 +167,35 @@ Administrative access follows the authorization policies defined in the Administ
 The Birth Profile lifecycle consists of:
 
 Authentication
+
         │
+
         ▼
+
 Create Birth Profile
+
         │
+
         ▼
+
 Validate Information
+
         │
+
         ▼
+
 Initialize Timeline
+
         │
+
         ▼
+
 Profile Active
+
         │
+
         ▼
+
 Profile Updates
 
 The Birth Profile is created once and maintained throughout the user's lifetime within the application.
@@ -136,11 +205,17 @@ The Birth Profile is created once and maintained throughout the user's lifetime 
 The architecture provides:
 
 Centralized personal identity.
+
 Reduced data duplication.
+
 Modular integration.
+
 Simplified maintenance.
+
 Improved scalability.
+
 Better privacy management.
+
 Future extensibility.
 
 11. Relationship with Other Modules
@@ -149,11 +224,10 @@ This architecture supports:
 
 Module 04 – User Authentication & Account Module
 Module 06 – Timeline, Events & Travel Module
-Module 07 – Media & Location Module
-Module 09 – Administration & Staff Management
-Module 10 – Privacy & Relationship Module
-Module 11 – AI Intelligence & Governance
-Module 12 – Database Design (ERD & Data Dictionary)
+Module 07 – Relationship Module
+Module 08 – Administration & Staff Management
+Module 10 – AI Intelligence & Governance
+Module 11 – Database Design (ERD & Data Dictionary)
 
 12. Summary
 

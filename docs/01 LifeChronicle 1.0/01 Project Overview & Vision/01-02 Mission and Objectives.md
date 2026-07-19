@@ -19,11 +19,17 @@ The platform aims to transform scattered memories into a structured digital life
 LifeChronicle aspires to:
 
 * Preserve personal history for future generations.
+
 * Become a lifelong digital memory companion.
+
 * Provide intelligent assistance without replacing human decisions.
+
 * Build a privacy-first platform.
+
 * Support multilingual users worldwide.
+
 * Continuously evolve without architectural redesign.
+
 
 ---
 
@@ -32,9 +38,13 @@ LifeChronicle aspires to:
 Every future enhancement should support the following vision:
 
 * Every meaningful moment deserves preservation.
+
 * Users own and control their personal data.
+
 * AI assists but never controls.
+
 * Simplicity is preferred over unnecessary complexity.
+
 * Scalability is planned from the beginning.
 
 ---
@@ -44,10 +54,15 @@ Every future enhancement should support the following vision:
 The vision extends beyond Version 1.0 and includes:
 
 * Advanced AI capabilities.
+
 * Global multilingual support.
+
 * Mobile applications.
+
 * Rich analytics.
+
 * Enterprise-grade scalability.
+
 * Continuous innovation.
 
 ---

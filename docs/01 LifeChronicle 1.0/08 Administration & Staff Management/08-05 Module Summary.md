@@ -12,12 +12,19 @@ The module provides:
 Staff Management
 
 Configuration Center
+
 Excel-first Administration
+
 Excel Import & Export
+
 Audit Logging
+
 Administrative Security
+
 Configuration-Driven Architecture
+
 Role-Based Staff Portal
+
 Dashboard Analytics (Pandas & Matplotlib)
 
 3. Design Principles
@@ -25,20 +32,30 @@ Dashboard Analytics (Pandas & Matplotlib)
 The module follows:
 
 Configuration Before Code
+
 Excel Before CRUD
+
 Least Privilege Access
+
 Audit Everything
+
 Reusable Administrative Framework
 4. Related Modules
 
 This module integrates with:
 
 User Authentication & Account
+
 Timeline, Events & Travel
+
 Relationship Management
+
 AI Intelligence & Governance
+
 Master Data & Localization
+
 Database Design
+
 Business Rules, Validation & Security
 5. Summary
 

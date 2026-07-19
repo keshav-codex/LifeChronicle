@@ -10,24 +10,39 @@ Each concern represents a conversation between the user and the support team unt
 The module shall:
 
 Allow users to report issues.
+
 Support conversation-based communication.
+
 Track concern progress.
+
 Maintain complete history.
+
 Improve support efficiency.
+
 3. Actors
+
 Primary Actors
+
 Registered User
+
 Secondary Actors
+
 Support Staff
+
 Administrator
+
 Artificial Intelligence
+
 System
+
 4. Concern Information
 
 Users shall provide:
 
 Concern Category
+
 Concern Title
+
 Concern Description
 
 Attachments are supported through configuration.
@@ -41,17 +56,24 @@ Concern Categories are maintained through Master Data.
 Examples include:
 
 Technical Issue
+
 Bug Report
+
 Feature Request
+
 Account Issue
+
 Feedback
+
 Other
 6. Artificial Intelligence
 
 Before submission, AI may:
 
 Suggest the most appropriate concern category.
+
 Improve the concern title.
+
 Improve the concern description.
 
 AI suggestions shall use only categories available in Master Data.
@@ -71,11 +93,17 @@ A new concern is not required for follow-up communication.
 Supported statuses include:
 
 New
+
 Assigned
+
 In Progress
+
 Escalated
+
 Resolved
+
 Closed
+
 Reopened
 
 Status values are maintained through Master Data.
@@ -85,8 +113,11 @@ Status values are maintained through Master Data.
 The system shall ensure:
 
 Users may edit a concern until the first staff reply.
+
 After the first reply, users may continue through conversation replies only.
+
 Users may reopen a resolved concern within the configured period.
+
 Operational limits are configuration-driven.
 10. Summary
 

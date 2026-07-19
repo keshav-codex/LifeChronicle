@@ -10,24 +10,35 @@ The Master Data module manages configurable business values, application setting
 The Master Data domain consists of the following entities:
 
 MasterData
+
 MasterDataTranslation
+
 MasterDataValidation
 
 The domain integrates with:
 
 Shared Infrastructure
+
 Artificial Intelligence
+
 All Business Modules
+
 3. Entity Relationships
+
 MasterData
+
       │
+
       ├── MasterDataTranslation (1:N)
+
       ├── MasterDataValidation (1:N)
+
       └── Parent MasterData (Self Reference)
 
 The MasterData entity is referenced by all business modules across the application.
 
 4. Entity Responsibilities
+
 MasterData
 
 Maintains configurable business values, application configuration, user interface settings, validation rules, localization, and operational behavior used throughout the application.
@@ -51,18 +62,32 @@ Supports validation without requiring application code changes.
 The Master Data domain shall ensure:
 
 A single generic MasterData entity is used throughout the application.
+
 Parent-child hierarchy is supported.
+
 Multiple language translations are supported.
+
 Validation rules are configuration-driven.
-AI may suggest additions or improvements but never updates Master Data automatically.
+
+AI may suggest additions or improvements but never updates Master Data 
+automatically.
+
 Used records support Soft Delete only.
+
 Unused records may be Hard Deleted.
+
 Excel Import and Export are supported.
+
 System-defined records are protected from deletion.
+
 Audit history is maintained through the shared Audit service.
+
 Application branding and user interface settings are configuration-driven.
+
 System messages and application content may be managed through Master Data.
+
 Feature availability may be controlled through configuration.
+
 Master Data supports application customization without code changes.
 
 6. Summary

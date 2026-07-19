@@ -13,10 +13,15 @@ A consistent folder organization improves maintainability, simplifies navigation
 The folder structure is designed around the following principles:
 
 * Modular development
+
 * Separation of concerns
+
 * Easy navigation
+
 * Reusability
+
 * Documentation-first development
+
 * Future scalability
 
 ---
@@ -24,21 +29,37 @@ The folder structure is designed around the following principles:
 # 3. High-Level Folder Structure
 
 ```text
+
 LifeChronicle/
+
 │
+
 ├── apps/
+
 ├── config/
+
 ├── docs/
+
 ├── master_data/
+
 ├── requirements/
+
 ├── deployment/
+
 ├── tools/
+
 ├── tests/
+
 ├── templates/
+
 ├── static/
+
 ├── media/
+
 ├── logs/
+
 ├── backups/
+
 └── manage.py
 ```
 
@@ -49,23 +70,40 @@ LifeChronicle/
 Each application follows a consistent structure.
 
 ```text
+
 app_name/
 │
+
 ├── admin.py
+
 ├── apps.py
+
 ├── models.py
+
 ├── urls.py
+
 ├── views.py
+
 ├── forms.py
+
 ├── services.py
+
 ├── validators.py
+
 ├── permissions.py
+
 ├── managers.py
+
 ├── signals.py
+
 ├── tests/
+
 ├── migrations/
+
 ├── templates/
+
 ├── static/
+
 └── management/
 ```
 
@@ -100,8 +138,11 @@ Developer utilities, automation scripts, master data, deployment resources, and 
 # 8. Folder Naming Standards
 
 * Lowercase names
+
 * Meaningful names
+
 * Underscore separated where applicable
+
 * Consistent naming throughout the project
 
 ---

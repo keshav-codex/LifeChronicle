@@ -13,7 +13,9 @@ A standardized environment ensures consistency across development, testing, and 
 Recommended Operating System:
 
 * Windows 11
+
 * Ubuntu LTS
+
 * macOS
 
 ---
@@ -21,13 +23,21 @@ Recommended Operating System:
 # 3. Core Technologies
 
 * Python
+
 * Django
+
 * PostgreSQL
+
 * Git
+
 * GitHub
+
 * HTML
+
 * CSS
+
 * Bootstrap
+
 * JavaScript
 
 ---
@@ -37,9 +47,14 @@ Recommended Operating System:
 Recommended tools:
 
 * Visual Studio Code
+
 * pgAdmin
+
 * Git
+
 * GitHub Desktop (optional)
+
+* ChatGPT
 
 ---
 
@@ -68,8 +83,11 @@ Sensitive configuration is managed using environment variables.
 Examples:
 
 * Secret Keys
+
 * Database Credentials
+
 * Email Configuration
+
 * AI Keys
 
 Secrets must never be committed to Git.
@@ -81,9 +99,13 @@ Secrets must never be committed to Git.
 Developers should:
 
 * Use Git regularly.
+
 * Follow coding standards.
+
 * Keep documentation updated.
+
 * Test before committing.
+
 * Maintain modular code.
 
 ---
@@ -93,8 +115,11 @@ Developers should:
 The environment is designed to support:
 
 * Docker
+
 * CI/CD
+
 * Cloud Deployment
+
 * Multiple deployment environments
 
 ---

@@ -13,9 +13,13 @@ The project is organized into independent Django applications, where each applic
 LifeChronicle follows a modular architecture based on:
 
 * Separation of Concerns
+
 * Single Responsibility Principle
+
 * High Cohesion
+
 * Loose Coupling
+
 * Reusable Components
 
 Each module owns its own business logic while collaborating with other modules through well-defined interfaces and database relationships.
@@ -24,18 +28,34 @@ Each module owns its own business logic while collaborating with other modules t
 
 # 3. Module Overview
 
-| Module         | Responsibility                        |
-| -------------- | ------------------------------------- |
-| Accounts       | Authentication and user accounts      |
-| Administration | Staff hierarchy and administration    |
-| Birth Profile  | Root profile and birth information    |
-| Events         | Timeline events and travel activities |
-| Categories     | Parent and child category management  |
-| Media          | Image management                      |
-| Locations      | Address and map management            |
-| Communication  | Notifications and invitations         |
-| Concerns       | Help desk and support                 |
-| AI             | Intelligence, governance, and reports |
+| Module         | Responsibility                                                                 
+                                                |
+
+| -------------- | 
+------------------------------------------------------------------------------------------------------------------------------ |
+| Accounts       | Authentication, identities, and user accounts                                                                       
+           |
+| Administration | Staff management, roles, permissions, and administration                                                                 
+      |
+| AI             | Artificial Intelligence, content assistance, moderation, and AI governance                                                     |
+
+| Birth Profile  | Root profile and birth information                                                                                             |
+
+| Categories     | Parent and child category management                                                                                           |
+
+| Communication  | User communication, emails, SMS, and in-app messaging services                                                                 |
+
+| Concerns       | Help desk, support tickets, and user communication                                                                             |
+
+| Events         | Timeline events, activities, collaboration, and relationships                                                                  |
+
+| Locations      | Address, geographical data, and map management                                                                                 |
+
+| Master Data    | Application configuration, localization, branding, themes, UI text, validation rules, feature flags, and system reference data |
+
+| Media          | Image and media management                                                                                                     |
+
+| Notifications  | Notifications, invitations, AI suggestions, warnings, alerts, and notification preferences                                     |
 
 -> System Configuration is a centralized configuration 
    module used to control application branding, feature 
@@ -48,9 +68,13 @@ Each module owns its own business logic while collaborating with other modules t
 Modules communicate through:
 
 * Django ORM relationships
+
 * Service classes
+
 * Business rules
+
 * Shared validations
+
 * AI services
 
 Direct coupling between unrelated modules should be avoided.
@@ -62,11 +86,17 @@ Direct coupling between unrelated modules should be avoided.
 Reusable components include:
 
 * Address component
+
 * Media component
+
 * Validation framework
+
 * AI rule engine
+
 * Notification system
+
 * Translation framework
+
 * Master data import system
 
 These components are shared across multiple modules.
@@ -88,9 +118,13 @@ Business logic should never be duplicated across modules.
 The modular architecture allows:
 
 * Independent module development
+
 * Easier testing
+
 * Simpler maintenance
+
 * Future module additions
+
 * Better scalability
 
 New modules can be introduced without restructuring existing ones.
@@ -102,9 +136,13 @@ New modules can be introduced without restructuring existing ones.
 The module architecture aims to achieve:
 
 * Maintainability
+
 * Extensibility
+
 * Code reuse
+
 * Clear ownership
+
 * Simplified development
 
 ---

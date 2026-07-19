@@ -10,26 +10,35 @@ Staff members perform operational and administrative activities according to ass
 Staff Management shall:
 
 Register staff members.
+
 Manage staff profiles.
+
 Assign departments.
+
 Assign designations.
+
 Assign roles and permissions.
+
 Control staff account status.
 
 Django Superuser
+
 Uses Django Admin only.
 
 Creates Staff.
+
 Emergency maintenance.
 
 Staff Portal
 
 Administrator
+
 Support Staff
+
 Role-Based Dashboard
 
-
 Permission Assignment
+
 Staff Login
 
 3. Staff Information
@@ -37,12 +46,19 @@ Staff Login
 A staff profile may include:
 
 Staff ID
+
 Full Name
+
 Email Address
+
 Phone Number
+
 Department
+
 Designation
+
 Assigned Role
+
 Account Status
 
 Additional fields may be introduced through configuration.
@@ -52,13 +68,18 @@ Additional fields may be introduced through configuration.
 Authorized administrators may:
 
 Create Staff
-View Staff
-Update Staff
-Activate Staff
-Deactivate Staff
-Search Staff
-Filter Staff
 
+View Staff
+
+Update Staff
+
+Activate Staff
+
+Deactivate Staff
+
+Search Staff
+
+Filter Staff
 
 Deletion of staff accounts should generally be avoided to preserve audit history.
 
@@ -67,9 +88,13 @@ Deletion of staff accounts should generally be avoided to preserve audit history
 The system shall ensure:
 
 Every staff member has at least one assigned role.
+
 Permissions are determined by assigned roles.
+
 Administrative access requires an active staff account.
+
 All administrative activities are recorded in audit logs.
+
 6. Summary
 
 The Staff Management module provides secure management of administrative users through role-based access control while preserving accountability and operational security.
